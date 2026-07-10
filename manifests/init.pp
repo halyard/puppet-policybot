@@ -30,7 +30,7 @@ class policybot (
     ensure => directory,
   }
 
-  file { "${datadir}/config.yaml":
+  file { "${datadir}/policy-bot.yml":
     ensure  => file,
     content => template('policybot/policy-bot.yml.erb'),
     notify  => Service['container@policybot'],

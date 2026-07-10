@@ -13,7 +13,8 @@ github:
   app:
     integration_id: <%= @github_integration_id %>
     webhook_secret: <%= @github_webhook_secret %>
-    private_key: <%= @github_private_key %>
+    private_key: |
+<%= @github_private_key.lines.map { |x| "      " + x }.join("\n") %>
   oauth:
     client_id: <%= @github_client_id %>
     client_secret: <%= @github_client_secret %>
