@@ -1,0 +1,12 @@
+{
+  "name": "halyard-policybot",
+  "version": "0.0.1",
+  "author": "Les Aker",
+  "license": "MIT",
+  "summary": "Configure policybot instance",
+  "source": "https://github.com/halyard/puppet-policybot",
+  "project_page": "https://github.com/halyard/puppet-policybot",
+  "issues_url": "https://github.com/halyard/puppet-policybot/issues",
+  "dependencies": [],
+  "operatingsystem_support": []
+}
