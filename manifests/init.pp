@@ -11,7 +11,6 @@
 # @param github_client_secret sets the Client Secret for OAuth
 # @param session_key sets the cookie encryption key
 # @param container_ip sets the IP address for the docker container
-# @param port sets the port to listen on
 class policybot (
   String $hostname,
   String $aws_access_key_id,
