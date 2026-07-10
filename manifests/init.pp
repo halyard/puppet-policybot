@@ -45,7 +45,7 @@ class policybot (
   }
 
   nginx::site { $hostname:
-    proxy_target          => "http://${container_ip}:8091",
+    proxy_target          => "http://${container_ip}:8080",
     aws_access_key_id     => $aws_access_key_id,
     aws_secret_access_key => $aws_secret_access_key,
     email                 => $email,
