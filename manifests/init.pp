@@ -39,6 +39,7 @@ class policybot (
   docker::container { 'policybot':
     image => 'palantirtechnologies/policy-bot:latest',
     args  => [
+      "--ip ${container_ip}",
       "-v ${datadir}:/secrets",
     ],
     cmd   => '',
